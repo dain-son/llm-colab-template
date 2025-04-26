@@ -1,0 +1,4 @@
+Host gcp-ai-server
+  HostName 34.64.121.99     # ← GCP 인스턴스 외부 IP 주소
+  User sea000415                 # ← GCP에서 사용하는 SSH 유저 이름 (보통 Gmail 앞부분)
+  IdentityFile ~/.ssh/google_compute_engine
