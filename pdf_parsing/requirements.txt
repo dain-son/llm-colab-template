@@ -1,0 +1,7 @@
+transformers
+langchain
+langchain-community
+openai
+unstructured
+pymupdf
+accelerate
