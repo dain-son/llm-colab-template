@@ -5,11 +5,12 @@ import pathlib
 import google.generativeai as genai
 from google.api_core import exceptions # 예외 처리를 위해 추가
 import random
+import os
 
 # --- 설정 ---
 # !!! 중요: 실제 발급받은 API 키로 교체하세요 !!!
 # Google AI Studio (https://aistudio.google.com/app/apikey) 에서 API 키를 발급받으세요.
-API_KEY = "AIzaSyBD65dxtd4SvxIrxbu4Fnp2dtyFioHNPLs" # 본인의 API 키 입력
+API_KEY = os.getenv("GOOLE_API_KEY") # 본인의 API 키 입력
 
 CSV_FILEPATH = '/Users/sondain/careerbee/cs_question.csv' # 질문 CSV 파일 경로 확인
 OUTPUT_DIR = '/Users/sondain/careerbee/feedback_data' # 분할 저장할 디렉토리 경로
